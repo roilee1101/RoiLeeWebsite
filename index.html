@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roi Lee's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4f9f11403d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1> <span>Roi</span> Lee</h1>
+                <p>Website</p>
+            </div>
+            <div class="small-text">
+                <p>Thank you for Visiting</p>
+            </div>
+        </div>
+    </div>
+
+<!-- about-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Roi Lee. <br> 
+                        I am currently enrolling for the third year in Simon Fraser University 
+                        for Bachelor of Science in Computing Sciene / Software System <br> 
+                        I have many hobbies indoor and also outdoor, I love playing video games and watching Videos
+                         but also love going out for a hike or to play sports like soccer.
+                        
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-rocket"></i> Skills</p>
+                        <p class="tab-links" onclick="opentab('volunteer')"><i class="fa-solid fa-handshake-angle"></i> Volunteer</p>
+                        <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
+                        <p class="tab-links" onclick="opentab('project')"><i class="fa-solid fa-diagram-project"></i> Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, JavaScript, Python, HTML, Css, SQL, LaTeX </li>
+                            <li><span>Developer Tools</span><br>Git, MySQL, VSCode, IntelliJ Idea</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="volunteer">
+                        <ul>
+                            <li><span>Sep 2024</span><br>Volunteer Staff for SFU Fall Hacks <br>
+                                supported participants with mental well-being activities, coding mentorship, and project 
+                                presentations</li>
+
+                            <li><span>Sep 2018 - Jun 2020</span><br>Leadership Team <br>
+                                As part of a high school Leadership team, volunteered 100+ hours annually to school events 
+                                and projects.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2024 - present</span><br>Simon Fraser University | Bachelor
+                            of Science in Computing Science / Software System <br> Expected Graduation: Apr 2027</li>
+                            <li><span>Sep 2022 - Apr 2024</span><br>University of the Fraser Valley | Bachelor of Science
+                            in Computer Science <br> Dean's List for the 2023 Winter Semester</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li>
+                                <span>Oct 2024</span><br>
+                                Roi Lee Website <br>
+                                Created a website to present myself <br>
+                                Tools Used: HTML, CSS, JavaScript<br>
+                                <a href="https://github.com/roilee1101/cmpt276Website"><i class="fa-brands fa-github"></i> GitHub Link</a>
+                            </li>
+
+                            <li><span>Jan 2024 - Apr 2024</span><br>R|R - clothing Store Website <br> 
+                                Created a website for a Clothjing store as a group project for CIS 145 (UFV) <br>
+                                Tools Used: HTML, CSS <br>
+                                <a href="https://github.com/roilee1101/CIS145_Website"><i class="fa-brands fa-github"></i> GitHub Link</a>
+                            </li>
+
+                            <li><span>Dec 2023</span><br>
+                                GUI Calculator <br>
+                                Created a basic Calculator with Java and implemented Graphical User Interface <br>
+                                Tools Used: Java, JFrame <br>
+                                <a href="https://github.com/roilee1101/Calculator-Java"><i class="fa-brands fa-github"></i> GitHub Link</a>
+
+                            </li>
+
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links -->
+
+    <div id="links">
+        <div class="container">
+            <h1 class="sub-title">My Links</h1>
+            <div class="link-list">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>My Website</h2>
+                    <p>This is the current Website that you are located</p>
+                    <a href="#">Click to go back to top</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2></i>Github</h2>
+                    <p>This is the link to my GitHub Account</p>
+                    <a href="https://github.com/roilee1101">GitHub</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linkedin"></i> 
+                    <h2>Linkedin</h2>
+                    <p>This is the link to my Linkedin Account</p>
+                    <a href="https://www.linkedin.com/in/22roil1101/">Linkedin</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file"></i>
+                    <h2>Résumé</h2>
+                    <p>This is the link to my Résumé</p>
+                    <a href="https://www.linkedin.com/in/22roil1101/">Résumé</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+
+</body>
+</html>
