@@ -213,6 +213,8 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-
+.red {
+    color: #ff004f;
+}
 
 
