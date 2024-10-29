@@ -82,7 +82,12 @@ nav ul li a:hover::after {
 
 #about {
     padding: 80px 0;
-    color: #ababab;
+    color: #fff;
+}
+
+.hobint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .row {
@@ -171,29 +176,31 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+
 }
 
-.link-list div {
+.link-list a div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    
     transition: background 0.5s, transform 0.5s;
 }
 
-.link-list div i {
+.link-list a div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.link-list div h2 {
+.link-list a div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.link-list div a{
+.link-list a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -201,7 +208,11 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 
-.link-list div:hover {
+.link-list a div:hover {
     background-color: #ff004f;
     transform: translateY(-10px);
 }
+
+
+
+
