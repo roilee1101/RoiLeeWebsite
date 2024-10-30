@@ -222,12 +222,11 @@ nav ul li a:hover::after {
 
 footer {
     font-size: 13px;
-    font-style: italic;
     text-align: center;
     padding: 3em;
     color: #fff;
     margin-top: 20px;
-    background-color: #080808;
+    background-color: #262626;
 }
 
 footer a {
@@ -252,14 +251,14 @@ footer a:hover::after {
 }
 
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 100px;
+.mailto {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-style: italic;
 }
 
-.mailto {
-    margin-top: 20px;
+.back {
+    margin-top: 10px;
+    font-style: italic;
 }
+
