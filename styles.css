@@ -218,3 +218,48 @@ nav ul li a:hover::after {
 }
 
 
+/* Footer */
+
+footer {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    padding: 3em;
+    color: #fff;
+    margin-top: 20px;
+    background-color: #080808;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+footer a::after {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100px;
+}
+
+.mailto {
+    margin-top: 20px;
+}
