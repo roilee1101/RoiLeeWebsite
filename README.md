@@ -8,4 +8,4 @@ This site was initially created for the Simon Fraser University CMPT 276, Lab 4 
 
 It is one of the most commonly used Lincese for GitHub projects. It has many permissions and few restrictions. Permission includes things like usage of code, modification, publishing and selling as long as you keep the license along with it.
 
-### [Click to open link in new tab](https://roilee1101.github.io/RoiLeeWebsite/#)
+### [Click to open link](https://roilee1101.github.io/RoiLeeWebsite/#)
