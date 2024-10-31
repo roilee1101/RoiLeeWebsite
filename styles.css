@@ -86,10 +86,15 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    
 }
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+nav ul li .short:hover::after {
+    width: 80%;
 }
 
 
