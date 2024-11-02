@@ -17,12 +17,19 @@
                 </ul>
             </div>
             <div class="nav-right">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#links" class="short">Links</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 </ul>
+
+                <div class="fas">
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+                
             </div>
+
         </nav>
         <div class="container">
 
@@ -211,6 +218,20 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
 
     </script>
