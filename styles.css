@@ -43,7 +43,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: inline-block;
-    float: left;
+    float: none;
 }
 
 nav a {
@@ -141,6 +141,11 @@ nav ul li .short:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+    line-height: 1.5
+}
+
+.about-col-2 p span{
+    color: #ff004f;
 }
 
 .sub-title {
